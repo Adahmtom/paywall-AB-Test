@@ -1,7 +1,7 @@
 # Paywall A/B Test
 
-Analysis of an A/B test on a redesigned paywall for FormWise, a made-up online legal-document subscription service.
-The data is simulated. `data/generate_data.py` builds it, and the script is seeded so the numbers are reproducible.
+Analysis of an A/B test on a redesigned paywall for FormWise, a made-up online legal document subscription service.
+The data is simulated by generate_data.py, and the script is seeded so the numbers are reproducible.
 
 The new paywall shows users a preview of the document they just filled in, plus a clearer comparison of the
 monthly and annual plans. The question was whether it gets more people to subscribe.
@@ -26,8 +26,8 @@ monthly and annual plans. The question was whether it gets more people to subscr
 - Mobile went from 13.1% to 17.0% (+30%), still significant after the Holm adjustment (p = 0.043). Desktop
   didn't change.
 - Revenue per viewer and annual plan share both moved up, but neither was significant.
-
-![Lift by device](figures/lift_by_device.png)
+ 
+![Lift by device]lift_by_device.png
 
 ## Recommendation
 Don't report an overall win. For mobile it's a trade-off: a properly sized mobile-only test would take about 28
